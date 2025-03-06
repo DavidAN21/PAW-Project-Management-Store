@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Lato&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navigation-container">
+      <div class="nav-header">
+        <img
+          src="img\logo.PNG"
+          class="logo-image"
+          alt="Company Logo"
+        />
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-item">
+            <span class="nav-text">HOME</span>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-text">TENTANG KAMI</span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-text">SERVICE</span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-text">HARGA</span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-text">CONTACT</span>
+        </li>
+        <li class="nav-item">
+          <span class="nav-text track-order-button">TRACK ORDER</span>
+        </li>
+      </ul>
+    </nav>
+    
+    <script>
+      document.querySelector(".menu-toggle").addEventListener("click", function () {
+        document.querySelector(".nav-links").classList.toggle("active");
+        this.classList.toggle("active");
+      });
+    </script>
+    
+    <main class="login-container">
+      
+      <svg
+      class="background-svg"
+      width="1440"
+      height="1350"
+      viewBox="0 0 1440 1350"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_183_32)">
+        <rect width="1440" height="1350" fill="white" />
+        <path d="M0 0H1440V1349.5H0V0Z" fill="url(#paint0_linear_183_32)" />
+        <g style="mix-blend-mode: overlay">
+          <path
+            d="M-8 457.561C-8 457.561 130.236 338.744 237 336.061C377.64 332.527 408.587 482.451 541.5 528.561C671.229 573.567 746 514.561 891 567.061C1036 619.562 1111.6 508.332 1245 545.561C1336.65 571.139 1459 662.061 1459 662.061V963.561H-38.5L-8 457.561Z"
+            fill="url(#paint1_linear_183_32)" />
+        </g>
+        <g style="mix-blend-mode: overlay">
+          <path
+            d="M-10 547.561C-10 547.561 157.302 542.337 263 526.061C372.399 509.216 429.831 443.281 539 461.561C603.485 472.359 693.5 526.061 693.5 526.061C693.5 526.061 755.052 550.989 795.5 564.061C950.004 613.993 1044.63 623.609 1207 623.561C1315.09 623.529 1482.5 597.061 1482.5 597.061V1060.56H-10V547.561Z"
+            fill="url(#paint2_linear_183_32)" />
+        </g>
+        <g style="mix-blend-mode: overlay">
+          <path
+            d="M198.5 646.628C116.444 630.214 -6 582.628 -6 582.628V1022.13H1482.5V677.628C1482.5 677.628 1275.56 670.915 1161.5 613.128C1161.5 613.128 1049.44 569.808 974 565.061C873.82 558.758 721.5 613.128 721.5 613.128C477 646.628 399.187 686.774 198.5 646.628Z"
+            fill="url(#paint3_linear_183_32)" />
+        </g>
+        <g style="mix-blend-mode: screen">
+          <path
+            d="M-31.47 697.323C-31.47 697.323 120.933 639.381 222.697 632.794C380.95 622.552 461.425 723.029 619.959 723.352C749.925 723.617 818.405 671.436 948.175 663.703C1141.54 652.181 1441 723.352 1441 723.352V1066.06H-77L-31.47 697.323Z"
+            fill="url(#paint4_linear_183_32)" />
+        </g>
+      </g>
+      <defs>
+        <lineargradient
+          id="paint0_linear_183_32"
+          x1="720"
+          y1="0"
+          x2="720"
+          y2="963.5"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#0002AB" />
+          <stop offset="0.803654" stop-color="#B8B8BC" />
+          <stop offset="1" stop-color="white" />
+        </lineargradient>
+        <lineargradient
+          id="paint1_linear_183_32"
+          x1="710.25"
+          y1="336"
+          x2="710.25"
+          y2="963.561"
+          gradientUnits="userSpaceOnUse">
+          <stop offset="0.159479" stop-color="#D9D9D9" />
+          <stop offset="0.434" stop-color="#3A9EFD" />
+        </lineargradient>
+        <lineargradient
+          id="paint2_linear_183_32"
+          x1="736.25"
+          y1="458.388"
+          x2="736.25"
+          y2="1060.56"
+          gradientUnits="userSpaceOnUse">
+          <stop offset="0.224" stop-color="#4C1AC4" />
+          <stop offset="1" stop-color="white" />
+        </lineargradient>
+        <lineargradient
+          id="paint3_linear_183_32"
+          x1="738.25"
+          y1="564.553"
+          x2="738.25"
+          y2="1022.13"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C41A94" stop-opacity="0.72" />
+          <stop offset="1" stop-color="#3A9EFD" />
+        </lineargradient>
+        <lineargradient
+          id="paint4_linear_183_32"
+          x1="682"
+          y1="581.279"
+          x2="682"
+          y2="1066.06"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#3D04C6" />
+          <stop offset="0.485" stop-color="white" />
+        </lineargradient>
+        <clippath id="clip0_183_32">
+          <rect width="1440" height="1350" fill="white" />
+        </clippath>
+      </defs>
+    </svg>
+      <h1 class="login-title">Login Page Admin</h1>
+      <div class="login-logo">
+        <img
+          src="img\logo.PNG"
+          alt="Logo"
+          class="logo-center-image" />
+      </div>
+      <form class="login-form" action="#" method="POST">
+        <input
+          type="text"
+          placeholder="Masukan Username Admin"
+          class="login-input"
+          id="username"
+          name="username"
+          required
+          aria-label="Username" />
+        <input
+          type="password"
+          placeholder="Masukan Password Admin"
+          class="login-input"
+          id="password"
+          name="password"
+          required
+          aria-label="Password" />
+        <button type="submit" class="login-button">Masuk</button>
+      </form>
+    </main>
+  </body>
+</html>
