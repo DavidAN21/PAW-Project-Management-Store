@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const heroImage = document.querySelector('.hero-image-container img');
 
     heroContent.style.opacity = 0;
-    heroContent.style.transform = 'translateX(-50px)'; // Change to translateX(-50px) for left side
+    heroContent.style.transform = 'translateX(-50px)';
     heroImage.style.opacity = 0;
     heroImage.style.transform = 'translateX(50px)';
 
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         heroContent.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
         heroImage.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
         heroContent.style.opacity = 1;
-        heroContent.style.transform = 'translateX(0)'; // Change to translateX(0)
+        heroContent.style.transform = 'translateX(0)';
         heroImage.style.opacity = 1;
         heroImage.style.transform = 'translateX(0)';
     }, 300);
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     card.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
                     card.style.opacity = 1;
                     card.style.transform = 'translateY(0)';
-                }, 200 * index); // Delay each card's animation
+                }, 200 * index);
             });
 
             window.removeEventListener('scroll', handleServiceCardsScroll);
@@ -135,9 +135,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const promoDescription = document.querySelector('.promo-description');
 
     promoTitle.style.opacity = 0;
-    promoTitle.style.transform = 'translateX(50px)'; // Start from right
+    promoTitle.style.transform = 'translateX(50px)';
     promoDescription.style.opacity = 0;
-    promoDescription.style.transform = 'translateX(50px)'; // Start from right
+    promoDescription.style.transform = 'translateX(50px)';
 
     function handlePromoScroll() {
         const priceSection = document.querySelector('.price-section');
@@ -147,13 +147,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (priceSectionPosition < screenPosition) {
             promoTitle.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
             promoTitle.style.opacity = 1;
-            promoTitle.style.transform = 'translateX(0)'; // Move to original position
+            promoTitle.style.transform = 'translateX(0)'; 
 
             setTimeout(() => {
                 promoDescription.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
                 promoDescription.style.opacity = 1;
-                promoDescription.style.transform = 'translateX(0)'; // Move to original position
-            }, 200); // Delay for description
+                promoDescription.style.transform = 'translateX(0)';
+            }, 200);
 
             window.removeEventListener('scroll', handlePromoScroll);
         }
